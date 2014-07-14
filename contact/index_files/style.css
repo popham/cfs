@@ -1,0 +1,1946 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 1:50:57 Nov 16, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:28:54 Jun 28, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+@charset utf-8;
+/*
+Theme Name: Slimstown
+Author: XHTMLized
+Author URI: http://xhtmlized.com/
+Version: 1.0.1
+
+ * Built on the Whiteboard Framework
+ * http://whiteboardframework.com
+ */
+
+/*
+ * The Whiteboard Framework is licensed under the GPL license.
+ * Feel free to use the Whiteboard Framework for commercial and non-commercial ventures.
+ * We require a link in the CSS file and a link on the website
+*/
+
+/*
+List of divs in Whiteboard
+Note that this list does not include the dynamically generated ids and classes, such as the body classes, the post ids, etc
+*/
+
+body {
+	
+}
+
+#main {
+
+}
+
+header {
+	
+}
+	nav {
+		
+	}
+	nav.primary {
+		
+	}
+	nav.footer {
+		
+	}
+	#widget-header {
+		
+	}
+	#widget-alert {
+		
+	}
+
+#content {
+	
+}
+	article {
+		
+	}
+		.featured-thumbnail {
+			
+		}
+		.post-content {
+			
+		}
+			.pagination {
+				
+			}
+	.post-meta {
+		
+	}
+	.post-navigation {
+		
+	}
+
+#comments {
+	
+}
+	li.comment {
+		
+	}
+		.odd {
+			
+		}
+		.even {
+			
+		}
+		.author-comment {
+			
+		}
+		.comment-text {
+			
+		}
+		.comment-meta {
+			
+		}
+			p.gravatar {
+				
+			}
+		.waiting-for-approval {
+			
+		}
+	#trackbacks {
+		
+	}
+		li.trackback {
+			
+		}
+	p#no-comments {
+		
+	}
+	#comments-form {
+		
+	}
+		#respond {
+			
+		}
+		.cancel-comment-reply {
+			
+		}
+
+.page {
+	
+}
+	#page-content {
+		
+	}
+	#page-meta {
+		
+	}
+
+.post {
+	
+}
+	.postContent {
+		
+	}
+	.post-excerpt {
+		
+	}
+
+.oldernewer {
+	overflow: hidden;
+	margin: 0 300px;
+	padding: 10px 0 20px;
+	font-size: 12px;
+}
+	.older {
+		float: left;
+	}
+	.newer {
+		float: right;
+	}
+	
+	.oldernewer a {
+		color: #1D1D1D !important;
+	}
+
+.search {
+	
+}
+
+.author {
+	
+}
+#recent-author-posts {
+	
+}
+#recent-author-comments {
+	
+}
+
+#error404 {
+	
+}
+
+#sidebar {
+	
+}
+	#widget-sidebar {
+		
+	}
+		#sidebar-search {
+			
+		}
+		#sidebar-nav {
+			
+		}
+		#sidebar-archives {
+			
+		}
+		#sidebar-meta {
+			
+		}
+		.widget {
+			
+		}
+
+#footer {
+	
+}
+	#widget-footer {
+		
+	}
+	#footer-nav {
+		
+	}
+	
+.no-results {
+	
+}
+
+.widget-area {
+	
+}
+
+.none { /* this class is used to hid the skip to content link at the beginning of the document for accessibility */
+	display: none;
+}
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.aligncenter {
+	text-align: center;
+}
+.alignleft {
+	text-align: left;
+}
+.alignright {
+	text-align: right;
+}
+
+/* Always remember to compress your live stylesheet and keep an uncompressed backup */
+
+/*******************************************************************************
+
+	CSS on Sails Framework
+	Title: Slimstown
+	Author: XHTMLized.com
+	Date: July 2012	
+
+********************************************************************************
+
+	1. BASE
+		1.1 Reset
+		1.2 Accessibility Navigation & Hide
+		1.3 Clearfix
+		1.4 Fonts
+		1.5 Normalized Styles
+		1.6 Image Replacement		
+
+	2. COMMON
+		2.1 Container
+		2.2 Header
+		2.3 Navigation
+		2.4 Content
+		2.5 Sidebar
+		2.6 Footer
+
+	3. PAGES
+		3.1 Home
+		3.2 Game Listing
+		3.3 Game Detail
+		3.4 Blog Index
+		3.5 Blog Single
+		3.6 Blog Categories
+		3.7 Content
+		3.8 Contact Us
+		3.9 Default
+
+
+	4. PRINT
+
+*******************************************************************************/
+
+
+/* 1. BASE
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 1.1 Reset
+------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a[href], label[for], select, 
+input[type=checkbox], input[type=radio] {
+	cursor: pointer;
+}
+
+button, input[type=button], input[type=image], 
+input[type=reset], input[type=submit] {
+	padding: 0;
+	overflow: visible;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner, 
+input[type=button]::-moz-focus-inner, 
+input[type=image]::-moz-focus-inner, 
+input[type=reset]::-moz-focus-inner, 
+input[type=submit]::-moz-focus-inner {
+	border: 0;
+}
+
+
+/* 1.2 Accessibility Navigation & Hide
+------------------------------------------------------------------------------*/
+
+#accessibility-nav {
+	position: absolute;
+	top: 0;
+	left: -9999em;
+	z-index: 1000;
+}
+
+#accessibility-nav a {
+	position: absolute;
+	top: 0;
+	white-space: nowrap;
+}
+
+#accessibility-nav a:active,
+#accessibility-nav a:focus {
+	left: 9999em;
+}
+
+.hide {
+	position: absolute !important;
+	left: -9999em !important;
+}
+
+
+/* 1.3 Clearfix
+------------------------------------------------------------------------------*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+}
+
+.ie7 .clearfix {
+	zoom: 1; 
+}
+
+
+/* 1.4 Fonts
+------------------------------------------------------------------------------*/ 
+
+@font-face {
+	font-family: 'helveticaneue';
+	src: url('/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/fonts/helveticaneuedeskui.eot');
+	src: local('☺'), url('/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/fonts/helveticaneuedeskui.woff') format('woff'), url('/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/fonts/helveticaneuedeskui.ttf') format('truetype'), url('/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/fonts/helveticaneuedeskui.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* 1.5 Normalized Styles
+------------------------------------------------------------------------------*/
+
+body {
+	font: 14px/18px 'helveticaneue', Arial, sans-serif;
+	color: #1d1d1d;
+	background: #fff url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_main.jpg) 0 0 repeat;
+}
+
+hr {
+	display: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+th, td {
+	vertical-align: top;
+}
+
+th {
+	font-weight: normal;
+	text-align: left;
+}
+
+address, cite, dfn {
+	font-style: normal;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #999;
+	cursor: help;
+}
+
+sub, 
+sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+input, textarea, select {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+	 overflow: auto;
+	 resize: none;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #00f;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color: #f00;
+}
+
+/* Content area */
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin: 15px 0 6px 0;
+	font-weight: bold;
+}
+
+.entry-content h2 {
+	font-size: 2em;
+}
+
+.entry-content h3 {
+	font-size: 1.67em;
+}
+
+.entry-content h4 {
+	font-size: 1.5em;
+}
+
+.entry-content h5 {
+	font-size: 1.25em;
+}
+
+.entry-content p {
+	margin-bottom: 1em;
+}
+
+.entry-content ul,
+.entry-content ol {
+	margin: 0 0 15px 0;
+	padding-left: 25px;
+	list-style: disc;
+}
+
+.entry-content ul ul {
+	margin-top: 5px;
+	list-style: circle;
+}
+
+.entry-content ul ul ul {
+	list-style: square;
+}
+
+.entry-content ol {
+	list-style: decimal;
+}
+
+.entry-content li {
+	margin-bottom: 5px;
+}
+
+.entry-content dl {
+	margin-bottom: 15px;
+}
+
+.entry-content dt {
+	font-weight: bold;
+}
+
+.entry-content dd {
+	margin-bottom: 10px;
+}
+
+.entry-content blockquote {
+	margin: 0 15px 15px 15px;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.entry-content th,
+.entry-content td {
+	padding: 5px 10px 5px 0;
+}
+
+.entry-content th {
+	font-weight: bold;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* 1.6 Image replacement
+------------------------------------------------------------------------------*/
+
+.ir {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.ir span {
+	display: block;
+	position: absolute;	
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.ie7 .ir a span,
+.ie7 a.ir span {
+	cursor: pointer;
+}
+
+
+/* 2. COMMON
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 2.1 Container
+------------------------------------------------------------------------------*/
+
+.wrapper {
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+/* 2.2 Header
+------------------------------------------------------------------------------*/
+
+#header {
+	margin: 32px 0 160px;
+	/* margin: 32px 0 160px; */
+	position: relative;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_header.png);
+}
+
+#header .site-name {
+	width: 135px;
+	height: 132px;
+	position: absolute;
+	top: -27px;
+	left: -2px;
+	text-align: center;
+}
+
+#header .site-name span {
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/logo1.png) no-repeat;
+}
+
+
+/* 2.3 Navigation
+------------------------------------------------------------------------------*/
+
+#navigation {
+	float: right;
+	overflow: hidden;
+	height: 100px;
+}
+
+#navigation li {
+	float: left;
+}
+
+#navigation li ul {
+	display: none;
+}
+
+#navigation a,
+#navigation span {
+	display: block;
+	width: 40px;
+	margin: 0 20px 0 0;
+	padding: 73px 0 0;
+	width: 62px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	background-image: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_navi_icos.png);
+	background-repeat: no-repeat;
+	color: #ebebeb;
+}
+
+#navigation #menu-item-4 span {
+	display: block;
+}
+
+#navigation a:hover,
+#navigation .current_page_item a,
+#navigation .current-menu-item a,
+#navigation .current-menu-item span,
+#navigation .current-page-parent a,
+#navigation .current-menu-parent a {
+	text-decoration: none;
+	color: #a4e204;
+}
+
+#navigation .elem-1 a,
+#navigation #menu-item-98 a,
+#navigation #menu-item-98 span,
+#navigation #menu-item-102 a,
+#navigation #menu-item-102 span {
+	background-position: 2px 11px;
+}
+
+#navigation .elem-1 a:hover,
+#navigation .elem-1.current_page_item a,
+#navigation #menu-item-98 a:hover,
+#navigation #menu-item-98.current-menu-item a,
+#navigation #menu-item-98.current-menu-item span,
+#navigation #menu-item-98.current-menu-parent a,
+#navigation #menu-item-102 a:hover,
+#navigation #menu-item-102.current-menu-item a,
+#navigation #menu-item-102.current-menu-item span,
+#navigation #menu-item-102.current-menu-parent a {
+	background-position: 2px -80px;
+}
+
+#navigation .elem-2 a,
+#navigation #menu-item-96 a,
+#navigation #menu-item-96 span,
+#navigation #menu-item-100 a,
+#navigation #menu-item-100 span {
+	background-position: -82px 11px;
+}
+
+#navigation .elem-2 a:hover,
+#navigation .elem-2.current_page_item a,
+#navigation #menu-item-96 a:hover,
+#navigation #menu-item-96.current-menu-item a,
+#navigation #menu-item-96.current-menu-item span,
+#navigation #menu-item-96.current-menu-parent a,
+#navigation #menu-item-100 a:hover,
+#navigation #menu-item-100.current-menu-item a,
+#navigation #menu-item-100.current-menu-item span,
+#navigation #menu-item-100.current-menu-parent a {
+	background-position: -82px -80px;
+}
+
+#navigation .elem-3 a,
+#navigation #menu-item-97 a,
+#navigation #menu-item-97 span,
+#navigation #menu-item-101 a,
+#navigation #menu-item-101 span {
+	background-position: -164px 11px;
+}
+
+#navigation .elem-3 a:hover,
+#navigation .elem-3.current_page_item a,
+#navigation #menu-item-97 a:hover,
+#navigation #menu-item-97.current-menu-item a,
+#navigation #menu-item-97.current-menu-item span,
+#navigation #menu-item-97.current-menu-parent a,
+#navigation #menu-item-101 a:hover,
+#navigation #menu-item-101.current-menu-item a,
+#navigation #menu-item-101.current-menu-item span,
+#navigation #menu-item-101.current-menu-parent a {
+	background-position: -164px -80px;
+}
+
+#navigation .elem-4 a,
+#navigation #menu-item-51 a {
+	background-position: -247px 11px;
+}
+
+#navigation .elem-4 a:hover,
+#navigation .elem-4.current_page_item a,
+#navigation #menu-item-51 a:hover,
+#navigation #menu-item-51.current_page_item a,
+#navigation #menu-item-51.current_page_item span,
+#navigation #menu-item-51.current-page-parent a {
+	background-position: -247px -80px;
+}
+
+#navigation .elem-5 a,
+#navigation #menu-item-99 a {
+	background-position: -329px 11px;
+}
+
+#navigation .elem-5 a:hover,
+#navigation .elem-5.current_page_item a,
+#navigation #menu-item-99 a:hover,
+#navigation #menu-item-99.current_page_item a,
+#navigation #menu-item-99.current_page_item span,
+#navigation #menu-item-99.current-page-parent a {
+	background-position: -329px -80px;
+}
+
+#socials {
+	float: right;
+	width: 153px;
+	margin: 0 21px 0 10px;
+	height: 100px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_socials.png);
+}
+
+#socials li {
+	float: left;
+}
+
+#socials a {
+	display: block;
+	width: 40px;
+	height: 0;
+	overflow: hidden;
+	margin: 0 0 0 10px;
+	padding: 73px 0 0;
+	width: 62px;
+	background-image: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_navi_icos.png);
+	background-repeat: no-repeat;
+	color: #ebebeb;
+}
+
+#socials a.icon-fb,
+#socials #menu-item-9 a {
+	background-position: -431px 11px;
+}
+
+#socials a.icon-fb:hover,
+#socials #menu-item-9 a:hover {
+	background-position: -431px -80px;
+}
+
+#socials a.icon-tw,
+#socials #menu-item-10 a {
+	background-position: -501px 11px;
+}
+
+#socials a.icon-tw:hover,
+#socials #menu-item-10 a:hover {
+	background-position: -501px -80px;
+}
+
+#socials .txt {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #ebebeb;
+}
+
+
+/* 2.4 Content
+------------------------------------------------------------------------------*/
+
+#content .wrapper {
+	background: #e4e4d4 url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_content.jpg);
+	-webkit-box-shadow:  0px 0px 15px 1px #555;
+	box-shadow:  0px 0px 15px 1px #555;
+}
+
+#content .content {
+	height: 522px;
+	position: relative;
+	overflow: auto;
+	padding: 30px 40px;
+}
+
+.page-id-97 #content .content {
+	height: 540px;
+	overflow: hidden;
+}
+
+
+/* 2.5 Sidebar
+------------------------------------------------------------------------------*/
+
+#sidebar {
+	float: left;
+	width: 200px;
+}
+
+
+/* 2.6 Footer
+------------------------------------------------------------------------------*/
+
+#footer {
+	clear: both;
+	padding: 16px 0;
+	min-width: 1024px;
+	text-transform: uppercase;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_footer.png) center 0 no-repeat;
+	color: #656565
+}
+
+#footer .wrapper {
+	overflow: hidden;
+}
+
+#footer nav {
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#footer nav li {
+	float: left;
+	padding: 0 20px 0 0;
+}
+
+#footer nav li a {
+	color: #656565;
+}
+
+#footer .copy {
+	float: right;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+/* 3. PAGES
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 3.1 Home
+------------------------------------------------------------------------------*/
+
+.content h2.main-headline {
+	 border: 0;
+	 margin: -13px 0 11px;
+	 text-align: center;
+	 font: bold 24px/36px 'Arvo', 'Myriad Pro';
+	 background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/bg_header.png) center center no-repeat;
+}
+
+.three-boxes {
+	clear: left;
+	margin: 15px 0 37px;
+}
+
+.three-boxes li {
+	float: left;
+	margin: 0 0 10px 22px;
+}
+
+.three-boxes li:first-child {
+	margin: 0;
+}
+
+.three-boxes li.box {
+	width: 260px;
+	height: 140px;
+	padding: 20px;
+	position: relative;
+	background: #ededed;
+	-webkit-box-shadow: 0px 4px 8px -2px #555;
+	box-shadow: 0px 4px 8px -2px #555;
+}
+
+.three-boxes li.box h3 {
+	padding: 7px 0 7px 49px;
+	margin: 0 0 11px;
+	font: bold 17px/21px 'Arvo', 'Myriad Pro';
+	text-transform: uppercase;
+	color: #0e0e0e;
+}
+
+.three-boxes li.box p,
+.three-boxes li.box div.textwidget {
+	line-height: 16px;
+	font-size: 13px;
+	text-align: justify;
+}
+
+.three-boxes li.box-1 h3 {
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/ico_box_1.png) 0 0 no-repeat;
+}
+
+.three-boxes li.box-2 h3 {
+	padding: 7px 0 7px 69px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/ico_box_2.png) 0 0 no-repeat;
+}
+
+.three-boxes li.box-3 h3 {
+	padding: 7px 0 7px 96px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/ico_box_3.png) 0 0 no-repeat;
+}
+
+.three-boxes-second-row li {
+	float: left;
+	width: 300px;
+	margin: 0 0 10px 22px;
+}
+
+.three-boxes-second-row li:first-child {
+	margin: 0;
+}
+
+.three-boxes-second-row li h3 {
+	margin: 0 0 11px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #0e0e0e;
+}
+
+.three-boxes-second-row li p,
+.three-boxes-second-row li div.textwidget {
+	line-height: 16px;
+	font-size: 13px;
+	text-align: justify;
+}
+
+.three-boxes-second-row li .social-link {
+	display: inline-block;
+	margin: 11px 10px 0 4px;
+}
+
+.home-page ,
+.home {
+	background: #000;
+}
+
+.home-page #header,
+.home #header {
+	margin: 27px 0 574px;
+}
+
+.main-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 1024px;
+	overflow: hidden;
+}
+
+.main-slider ul.slider {
+	width: 10000%;
+	
+}
+
+.main-slider ul.slider li {
+	float: left;
+	width: 1%;
+	min-height: 1000px;
+	position: relative;
+	text-align: center;
+}
+
+.main-slider a.prev {
+	display: block;
+	height: 570px;
+	width: 30%;
+	position: absolute;
+	overflow: hidden;
+	top: 160px;
+	left: 0;
+	text-indent: -999px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/arr_left.png) 0 270px no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.main-slider a.next {
+	display: block;
+	height: 570px;
+	width: 30%;
+	position: absolute;
+	overflow: hidden;
+	top: 160px;
+	right: 0;
+	text-indent: -999px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/arr_right.png) right 270px no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.main-slider a.prev:hover,
+.main-slider a.next:hover {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.main-slider li img {
+	max-width: 100%;
+}
+
+.main-slider li > div {
+	left: 50%;
+    margin: 0 0 0 -512px;
+    position: absolute;
+    top: 340px;
+    width: 1024px;
+    text-align: left;
+}
+
+.main-slider div h3 {
+	float: left;
+	padding: 7px 10px;
+	font: bold 38px/42px 'Arvo', 'Myriad Pro';
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/bg_green.png);
+}
+
+.main-slider li > div div {
+	display: block;
+	clear: left;
+	width: 605px;
+	padding: 18px 22px;
+	line-height: 16px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/bg_gray.png);
+	color: #fff;
+}
+
+.main-slider div p.content {
+	display: block;
+	clear: left;
+	width: 605px;
+	padding: 18px 22px;
+	line-height: 16px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/bg_gray.png);
+	color: #fff;
+}
+
+.main-slider div p a,
+.main-slider div p a:visited,
+.main-slider li > div div a,
+.main-slider li > div div a:visited {
+	text-decoration: none;
+	color: #a1db2d;
+}
+
+.main-slider .slider-switcher {
+	position: absolute;
+	top: 638px;
+	left: 50%;
+	margin: 0 0 0 -512px;
+	width: 1024px;
+	text-align: center;
+	z-index: 99;
+}
+
+.main-slider .slider-switcher li {
+	display: inline;
+	padding: 0 6px;
+}
+
+.main-slider .slider-switcher a {
+	display: inline-block;
+	height: 0;
+	width: 22px;
+	padding: 22px 0 0;
+	overflow: hidden;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/bg_switcher.png) right 0 no-repeat;
+}
+
+.main-slider .slider-switcher a.active,
+.main-slider .slider-switcher a:hover {
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/home/bg_switcher.png) 0 0 no-repeat;
+}
+
+
+/* 3.2 Game Listing
+------------------------------------------------------------------------------*/
+
+#content .content.game-list {
+	padding: 30px 0 20px 40px;
+	height: 700px;
+}
+
+.filter-cont {
+	overflow: hidden;
+	padding: 0 0 38px;
+}
+
+.filter-cont > span {
+	float: left;
+	margin: 0 11px 0 0;
+	font-size: 15px;
+	line-height: 24px;
+	color: #000;
+}
+
+#filters {
+	float: left;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+#filters li {
+	float: left;
+}
+
+#filters li a {
+	display: block;
+	padding: 2px 10px;
+	margin: 0 1px;
+	color: #000;
+}
+
+#filters li a:hover,
+#filters li.current_page_item a {
+	border: 1px solid #fff;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+	background: #95cf00;
+	color: #fff;
+	-webkit-box-shadow: inset 1px 1px 2px 0px #777;
+	box-shadow: inset 1px 1px 2px 0px #777;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-shadow: 1px 1px 1px #777;
+}
+
+.ie #filters li.current_page_item a,
+.ie #filters li a:hover {
+	
+}
+
+.game-listing {
+	clear: both;
+	width: 967px;
+}
+
+.game-listing li {
+	float: left;
+	padding: 0 0 25px;
+	width: 241px;
+}
+
+.game-listing li a {
+	display: block;
+	width: 220px;
+	position: relative;
+	height: 185px;
+	-webkit-box-shadow: 0 0 8px 0px #333;
+	box-shadow: 0 0 8px 0px #333;
+}
+
+.game-listing li a img {
+	width: 218px;
+	height: 183px;
+	border: 1px solid #fff;
+}
+
+.game-listing li a > span {
+	display: none;
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	padding: 0 10%;
+	top: 0;
+	left: 0;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/bg_alpha.png);
+}
+
+.game-listing li a:hover {
+	text-decoration: none;
+}
+
+.game-listing li a:hover > span {
+	display: block;
+}
+
+.game-listing li a > span strong {
+	display: block;
+	margin: 30px 0 12px;
+	font-size: 20px;
+	color: #a4e204;
+}
+
+.game-listing li a > span span {
+	display: block;
+	font-size: 11px;
+	line-height: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+/* 3.3 Game Detail
+------------------------------------------------------------------------------*/
+
+.main-column {
+	width: 620px;
+	float: left;
+	padding: 0 30px 0 0;
+	border-right: 1px solid #A0A095;
+}
+
+.content .main-column  p {
+	line-height: 16px;
+	margin: 0 0 13px;
+}
+
+.content .main-column h2 {
+	border: 0;
+	margin: 0 0 10px;
+	line-height: 64px;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: 'Arvo', 'Myriad Pro';
+	text-transform: none;
+}
+
+.main-column .slider {
+	position: relative;
+	margin: 0 0 6px;
+}
+
+.main-column .slider div {
+	overflow: hidden;
+	height: 160px;
+	margin: 0 32px;
+	position: relative;
+}
+
+.main-column .slider ul {
+	width: 1000%;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.main-column .slider ul li {
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+.main-column .slider ul li a {
+	display: block;
+	position: relative;
+	-webkit-box-shadow: 0 0 8px 0px #333;
+	box-shadow: 0 0 8px 0px #333;
+}
+
+.main-column .slider ul li a img {
+	display: block;
+	border: 1px solid #fff;
+	width: 163px;
+	height: 137px;
+}
+
+.main-column .slider .next {
+	display: block;
+	height: 0;
+	padding: 29px 0 0;
+	overflow: hidden;
+	width: 25px;
+	position: absolute;
+	top: 55px;
+	right: -9px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/slider_arrows.png) -26px 0 no-repeat;
+}
+
+.main-column .slider .prev {
+	display: block;
+	height: 0;
+	padding: 29px 0 0;
+	overflow: hidden;
+	width: 25px;
+	position: absolute;
+	top: 55px;
+	left: -9px;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/slider_arrows.png) 0 0 no-repeat;
+}
+
+.sidebar {
+	overflow: hidden;
+}
+
+.social-links {
+	overflow: hidden;
+	padding: 13px 0 0;
+}
+
+.social-links span {
+	float: left;
+	padding: 0 6px 0 0;
+	line-height: 24px;
+	font-size: 12px;
+}
+
+.social-links ul {
+	float: left;
+}
+
+.social-links ul li {
+	float: left;
+}
+
+.social-links ul li a {
+	display: block;
+	width: 26px;
+	height: 0;
+	margin: 0 4px 0 0;
+	padding: 27px 0 0;
+	overflow: hidden;
+	background: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/icos_social.png) -30px 0 no-repeat;
+}
+
+.social-links ul li:first-child a {
+	background-position: 0 0;
+}
+
+.sidebar {
+	padding: 0 0 0 20px;
+}
+
+.sidebar h3 {
+	margin: 10px 0 11px;
+	line-height: 36px;
+	font-weight: bold;
+	font-size: 32px;
+	font-family: 'Arvo', 'Myriad Pro';
+}
+
+.sidebar h5 {
+	margin: 0 0 11px;
+	line-height: 28px;
+	font-weight: bold;
+	font-size: 21px;
+	font-family: 'Arvo', 'Myriad Pro';
+}
+
+.app-cont {
+	width: 246px;
+	padding: 16px 22px 9px;
+	margin: 0 0 22px;
+	overflow: hidden;
+	position: relative;
+	background: #6da62e;
+	-webkit-box-shadow: 1px 1px 5px 1px #555;
+	box-shadow: 1px 1px 5px 1px #555;
+}
+
+.app-cont h4 {
+	width: 100px;
+	margin: 0 0 14px 10px;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.app-cont strong {
+	position: absolute;
+	top: 7px;
+	left: 134px;
+	line-height: 52px;
+	font-weight: bold;
+	font-size: 48px;
+	font-family: 'Arvo', 'Myriad Pro';
+	white-space: nowrap;
+	color: #fff;
+}
+
+.app-cont a {
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+.app-cont strong + a {
+	
+}
+
+.game-details {
+	overflow: hidden;	
+	margin: 0 0 26px;
+}
+
+.game-details li {
+	display: none;
+	padding: 0 0 7px 28px;
+	margin: 0 0 1px;
+	font-size: 12px;
+	background-image: url(/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/icos.png);
+	background-repeat: no-repeat;
+}
+
+.game-details li.prop-1 {
+	background-position: 0 0;
+}
+
+.game-details li.prop-2 {
+	background-position: 0 -27px;
+}
+
+.game-details li.prop-3 {
+	background-position: 0 -53px;
+}
+
+.game-details li.prop-4 {
+	background-position: 0 -79px;
+}
+
+.game-details li.prop-5 {
+	background-position: 0 -105px;
+}
+
+.video-list {
+	
+}
+
+.video-list li {
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+.video-list li a {
+	display: block;
+	position: relative;
+	border: 1px solid #fff;
+	width: 80px;
+	-webkit-box-shadow: 0 0 5px 1px #555;
+	box-shadow: 0 0 5px 1px #555;
+}
+
+.video-list li a img {
+	width: 100%;
+	display: block;
+}
+
+.video-list li a span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	text-indent: -999px;
+	background: #000000 url('/web/20131116015057/http://slimstown.com/wp-content/themes/slimstown/images/layer_video.png') center center no-repeat;
+	opacity: 0.7; 
+	filter: alpha(opacity = 70);
+}
+
+
+
+/* 3.4 Blog Index
+------------------------------------------------------------------------------*/
+
+.content h2 {
+	border-bottom: 1px solid #A0A095;
+	margin: 0 0 40px;
+	font-size: 30px;
+	line-height: 45px;
+	text-transform: uppercase;
+	color: #1d1d1d;
+}
+
+.content .article-list {
+	
+}
+
+.content .article-list li {
+	margin: 0 0 12px;
+}
+
+.content .article-list li h4 {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.content .article-list li a {
+	font-weight: bold;
+	color: #569618;
+}
+
+.content .article-list li h4 a {
+	color: #1d1d1d;
+}
+
+.content .article-list li span {
+	font-size: 12px;
+}
+
+.content .article-list li span.date-author {
+	display: block;
+}
+
+.content .article-list li p {
+	margin: 0 0 20px;
+	line-height: 16px;
+}
+
+.content .article-list li hr {
+	border: 0;
+	border-bottom: 1px solid #A0A094;
+    color: #A0A094;
+    display: block;
+    width: 83%;
+}
+
+
+/* 3.5 Blog Single
+------------------------------------------------------------------------------*/
+
+
+/* 3.6 Blog Categories
+------------------------------------------------------------------------------*/
+
+
+/* 3.7 Content
+------------------------------------------------------------------------------*/
+
+.page-content {
+	color: #2f2f2f;
+}
+
+.page-content p {
+	margin: 0 0 14px;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+#content #sub-navigation {
+	position: absolute;
+	top: 36px;
+	right: 40px;
+	font-size: 16px;
+}
+
+#content #sub-navigation ul {
+	overflow: hidden;
+}
+
+#content #sub-navigation ul.sub-menu {
+	display: none;
+}
+
+#content #sub-navigation .current-menu-item ul.sub-menu,
+#content #sub-navigation .current-menu-parent ul.sub-menu {
+	display: block;
+}
+
+#content #sub-navigation li {
+	float: left;
+}
+
+#content #sub-navigation .menu > li > a {
+	display: none;
+}
+
+#content #sub-navigation li a {
+	display: block;
+	padding: 3px 8px;
+	margin: 0 4px 0 1px;
+	color: #000;
+}
+
+#content #sub-navigation .sub-menu > li a:hover,
+#content #sub-navigation .sub-menu > li.current_page_item a {
+	border: 1px solid #fff;
+	margin: 0 3px 0 0;
+	text-decoration: none;
+	background: #95cf00;
+	color: #fff;
+	-webkit-box-shadow: inset 1px 1px 2px 0px #777;
+	box-shadow: inset 1px 1px 2px 0px #777;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-shadow: 1px 1px 1px #777;
+	filter: dropshadow(color=#777, offx=1, offy=1);
+}
+
+
+
+/* 3.8 Contact Us
+------------------------------------------------------------------------------*/
+
+form {
+	
+}
+
+form p {
+	margin: -30px 0 18px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.row {
+	position: relative;
+	overflow: hidden;
+	padding: 0 0 21px;
+}
+
+.row input {
+	border: 1px solid #888;
+	padding: 4px 8px 4px 30px;
+	margin: 0 0 0 60px;
+	width: 360px;
+	height: 24px;
+	position: relative;
+	outline: none;
+	line-height: 24px;
+	font-size: 12px;
+	background: #fff;
+	color: #1d1d1d;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #777;
+	box-shadow: inset 0px 0px 4px 0px #777;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.row textarea {
+	border: 1px solid #888;
+	padding: 4px 8px;
+	position: relative;
+	width: 543px;
+	height: 135px;
+	line-height: 18px;
+	font-size: 12px;
+	background: #fff;
+	color: #1d1d1d;
+	-webkit-box-shadow: inset 0px 0px 4px 0px #777;
+	box-shadow: inset 0px 0px 4px 0px #777;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.row label {
+	position: absolute;
+	z-index: 99;
+	width: 78px;
+	height: 32px;
+	border: 1px solid #000;
+	text-align: center;
+	line-height: 32px;
+	background: #fff;
+	color: #000;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+
+.btns-row input {
+	width: 141px;
+	height: 35px;
+	border: 1px solid #bbb;
+	text-align: center;
+	line-height: 32px;
+	font-size: 15px;
+	background: #fff;
+	color: #000;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.btns-row input:hover {
+	border: 1px solid #000;
+}
+
+#content .row  .content.wpcf7-form-control-wrap {
+	padding: 0;
+	/*overflow: hidden;*/
+	height: auto;
+}
+
+.captcha-row  {
+	overflow: hidden;
+	padding: 0 0 10px;
+}
+
+.captcha-row  img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.row span.wpcf7-form-control-wrap,
+.captcha-row span.wpcf7-form-control-wrap {
+	display: block;
+}
+
+.row span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip,
+.captcha-row span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip {
+	top: 12%;
+	left: 51%;
+	border: 0;
+	background: none;
+	color: red;
+}
+
+.captcha-row span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip {
+	left: 42%;
+}
+
+.content .wpcf7-response-output {
+	border: 1px solid red;
+	display: block;
+	margin: 0;
+	position: absolute;
+	top: 83px;
+	width: 89%;
+	text-align: center;
+	color: red;
+}
+
+.content .wpcf7-response-output.wpcf7-display-none {
+	display: none;
+}
+
+.content .wpcf7-response-output.wpcf7-mail-sent-ok {
+	border: 1px solid #398F14;
+	color: #398F14;
+}
+
+
+/* 3.9 Default
+------------------------------------------------------------------------------*/
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+	.game-listing li a:hover > span { display: none !important; }
+	.main-slider a.prev,
+	.main-slider a.next {
+		width: 64px !important;
+		height: 109px;
+		top: 260px;
+		background-position: 0 0 !important;
+	}
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+	.game-listing li a:hover > span { display: none !important; }
+}
+
+
+@media screen and (max-width: 960px) {
+	body #content .content {
+		height: auto !important;
+		min-height: 900px;
+	}
+	#content .content.game-list {
+		padding: 30px 40px !important;
+		min-height: 900px;
+		height: auto !important;
+	}
+	.main-slider a.prev,
+	.main-slider a.next {
+		width: 64px !important;
+		height: 109px;
+		top: 260px;
+		background-position: 0 0 !important;
+	}
+}
+
+/* 4. PRINT
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+@media print {
+
+	body { 
+		font: normal normal 12pt/1.5em "Times New Roman", Times, serif; 
+	}
+
+	a[href]:after { 
+		content: " (" attr(href) ") "; 
+		font-size: 90%; 
+	}
+
+	a[href^="/"]:after { 
+		content: " (http://domain.com" attr(href) ") "; 
+	}
+
+	#accessibility-nav, 
+	.hide { 
+		display: none !important; 
+	}
+}	

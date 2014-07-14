@@ -1,0 +1,137 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 23:34:07 Nov 15, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:28:54 Jun 28, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+Theme Name: Slimstown
+Theme URI: http://xhtmlized.com/
+Description: 
+Author: XHTMLized
+Version: 1.1
+License: 
+
+*/
+#header {
+	min-width: 1024px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	body #content .content {
+		height: auto !important;
+		min-height: 890px;
+	}
+	#content .content.game-list {
+		padding: 30px 40px !important;
+	}
+.main-slider a.prev, .main-slider a.next {
+    background-position: 0 0 !important;
+    height: 109px;
+    top: 260px;
+    width: 64px !important;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	body #content .content {
+		/*height: auto !important;
+		min-height: 522px;*/
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	#content .content.game-list {
+		padding: 30px 40px !important;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	body #content .content {
+		height: auto !important;
+		min-height: 890px;
+	}
+	#content .content.game-list {
+		padding: 30px 40px !important;
+height: auto !important;
+		min-height: 890px;
+	}
+	.wrapper, body {
+		margin: 0 !important;
+	}
+	.main-slider,
+	.main-container {
+	    width: 1024px !important;
+	}
+.main-slider a.prev, .main-slider a.next {
+    background-position: 0 0 !important;
+    height: 109px;
+    top: 260px;
+    width: 64px !important;
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+	
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	body #content .content {
+		height: auto !important;
+		min-height: 890px;
+	}
+	#content .content.game-list {
+		padding: 30px 40px !important;
+	}
+	.main-slider a.prev, .main-slider a.next {
+    background-position: 0 0 !important;
+    height: 109px;
+    top: 260px;
+    width: 64px !important;
+}
+}

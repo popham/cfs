@@ -1,0 +1,76 @@
+header nav li {
+    text-align:center;
+}
+
+h1 {
+    display:none;
+}
+
+header nav .icon {
+    font-size:200%;
+}
+
+header nav .icon-name {
+    display:block;
+}
+
+header nav ul ul {
+    display:none;
+}
+
+footer nav {
+    text-align:center;
+}
+
+footer nav .icon-name {
+    display:none;
+}
+
+.game {
+    margin:10px;
+    padding:3px;
+}
+
+.game figcaption h3 {
+    margin-top:0;
+    padding-left:5px;
+    padding-right:5px;
+    color:#48dd00;
+}
+
+.game figcaption p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.game figcaption {
+    float:left;
+    width:60%;
+}
+
+.thumbnail a > img {
+    float:left;
+    width:40%;
+}
+
+@media (min-width:992px) {
+    .game figcaption {
+        float:none;
+        width:100%;
+    }
+
+    .thumbnail a > img {
+        float:none;
+        width:100%;
+    }
+}
+
+.services .service div {
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    box-shadow:0px 4px 8px 1px #555;
+    background-color:#ffffe4;
+}

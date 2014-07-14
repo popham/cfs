@@ -1,0 +1,21 @@
+.icon-blog {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17e;');
+}
+.icon-contact {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf187;');
+}
+.icon-home {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf32b;');
+}
+.icon-information {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1a1;');
+}
+.icon-games {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c8;');
+}
+.icon-facebook {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf231;');
+}
+.icon-twitter {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf243;');
+}

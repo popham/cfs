@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'ionicons';
+    src:url('fonts/ionicons.eot?plnpgf');
+    src:url('fonts/ionicons.eot?#iefixplnpgf') format('embedded-opentype'),
+        url('fonts/ionicons.woff?plnpgf') format('woff'),
+        url('fonts/ionicons.ttf?plnpgf') format('truetype'),
+        url('fonts/ionicons.svg?plnpgf#ionicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'ionicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-blog:before {
+    content: "\f17e";
+}
+.icon-contact:before {
+    content: "\f187";
+}
+.icon-home:before {
+    content: "\f32b";
+}
+.icon-information:before {
+    content: "\f1a1";
+}
+.icon-games:before {
+    content: "\f1c8";
+}
+.icon-facebook:before {
+    content: "\f231";
+}
+.icon-twitter:before {
+    content: "\f243";
+}
